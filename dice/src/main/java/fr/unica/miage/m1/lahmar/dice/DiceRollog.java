@@ -1,12 +1,15 @@
 package fr.unica.miage.m1.lahmar.dice;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+// mettre lombok dans les dépendances
+@Data
 @Entity
 public class DiceRollog {
 
@@ -19,7 +22,7 @@ public class DiceRollog {
 
     @ElementCollection
     @Column
-    private List<Integer> dices;
+    private List<Integer> dices = new ArrayList<>();
 
     @Column
     private LocalDateTime timestamp;

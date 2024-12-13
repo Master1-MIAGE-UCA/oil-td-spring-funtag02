@@ -4,11 +4,13 @@ import org.springframework.stereotype.Component;
 
 import java.util.Random;
 
+
 @Component
 public class Dice {
     public static Face throwDice() {
         Random rnd = new Random();
         int randomIndex = rnd.nextInt(6);
+
         return Face.values()[randomIndex];
     }
 

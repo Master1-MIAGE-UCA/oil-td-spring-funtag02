@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface DiceRepository extends JpaRepository<DiceRollog, Long>{
-    DiceRollog findById(int id);
+    // DiceRollog findById(int id);
 
 
 }
